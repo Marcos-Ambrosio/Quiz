@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Quiz</h1>
+        <h2 class="category">Knowledge</h2>
+        <button class="btn-play">Play</button>
+    </header>
+
+    <div class="background">
+        <div class="modal-start">
+            <form>
+                <label for="name">Insira aqui o seu nome</label>
+                <input type="text" class="box" id="name">
+                <select id="category">
+                    <option value="todascategorias">Todas categorias</option>
+                    <option value="futebol">Futebol</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="geografia">Geografia</option>
+                </select>
+                <div class="buttons">
+                    <button class="btn btn-start" type="submit">Start</button>
+                    <button class="btn btn-back">Go to main</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="modal-gameOver">
+            <p><span class="mistakes"></span></p>
+            <p>Acertos : <span class="right"></span></p>
+            <h1 class="points"></h1>
+            <button class="btn btn-back">Go to main</button>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="numberOfQuestion"></div>
+        <div class="name">Nome</div>
+        <div class="atualQuestion">
+            <div class="question">???</div>
+            <div class="options">
+                <button class="alt1">?</button>
+                <button class="alt2">?</button>
+                <button class="alt3">?</button>
+                <button class="alt4">?</button>
+            </div>
+        </div>
+    </main>
+    <div class="rool"></div>
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
